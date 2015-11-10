@@ -25,6 +25,14 @@ body{
     clear:both;
 }
 
+.relative{
+    position:relative;
+}
+
+.center{
+    text-align: center;
+}
+
 a{
 	color:#C32F34;
 	text-decoration: underline;
@@ -180,6 +188,7 @@ p{
 .project_image_wrapper{
     position:relative;
     display:block;
+    cursor:pointer;
 }
 
 .project_overlay{
@@ -204,6 +213,14 @@ p{
     border:2px solid white;
     padding:5px 10px;
     border-radius:5px;
+}
+
+.gallery{
+    display:none;
+}
+
+.first_gallery{
+    display:block;
 }
 
 
@@ -295,6 +312,12 @@ p{
     background-position: center;
     background-size: 100% auto;
 	height:500px;
+}
+
+.slide_background{
+    background-image:url('images/background2.jpg');
+    height:500px;
+    width:100%
 }
 
 .inner_slide{
