@@ -59,6 +59,8 @@ h2{
     font-weight: 400;
     margin-bottom: 20px;
     color:#333;
+    font-family: 'Fira Sans', sans-serif;
+    margin-top:40px;
 }
 
 h3{
@@ -78,10 +80,13 @@ h4{
     clear:both;
 }
 
-.subtitles{
-    font-size:19px;
-    color:#868686;
-    margin-bottom:40px;
+.head_text{
+    color: #868686;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 27px;
+    margin-bottom: 40px;
+    width: 750px;
 }
 
 a{
@@ -365,13 +370,15 @@ p{
 }
 
 .current_year{
-    margin-bottom:100px;
+    margin-bottom:70px;
     text-align:center;
+    font-size:21px;
 }
 
 .first_year{
-    margin-top:60px;
+    margin-top:70px;
     text-align:center;
+    font-size:21px;
 }
 
 .timeline_step:nth-child(even){
@@ -417,7 +424,7 @@ p{
 	position:absolute;
 	left:50%;
 	margin-left:-2px;
-    top:126px;
+    top:35px;
 }
 
 .timeline_left_icon, .timeline_right_icon{
