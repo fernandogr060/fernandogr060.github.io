@@ -161,6 +161,10 @@ p{
     height:500px;
 }
 
+.short_description_title{
+    display:none;
+}
+
 .short_description {
     color: white;
     margin: 30px auto;
@@ -303,6 +307,10 @@ p{
     font-weight:400;
 }
 /*REFERALS*/
+
+.referals_title{
+    display:none;
+}
 
 .referals_section{
 	margin-bottom:20px;
