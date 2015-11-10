@@ -315,7 +315,7 @@ p{
 }
 
 .slide_background{
-    background-image:url('images/background2.jpg');
+    background-image:url('../images/background2.jpg');
     height:500px;
     width:100%
 }
