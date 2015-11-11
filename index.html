@@ -29,6 +29,7 @@
         <link href="css/owl.theme.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/featherlight.css" />
         <link rel="stylesheet" type="text/css" href="css/featherlight.gallery.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="css/style.css" />
         <script type="text/javascript" src="js/jquery.js"></script> 
         <script type="text/javascript" src="js/jquery.validate.js"></script> 
@@ -38,7 +39,6 @@
         <script src="js/owl.carousel.js"></script>
         <link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		<!--[if lte IE 8]><style>.support-note .note-ie{display:block;}</style><![endif]-->
     </head>
     <body>
@@ -53,12 +53,14 @@
 
         </script>
         <header class="main_header">
-            <ul class="menu">
-                <li><a class="menu_link" id="projects_link" href="#projects">Projects</a></li>
-                <li><a class="menu_link" id="referals_link" href="#referals">Referals</a></li>
-                <li><a class="menu_link" id="timeline_link" href="#timeline">Timeline</a></li>                
-                <li><a class="menu_link" id="contacts_link" href="#contact">Contact</a></li>
-            </ul>
+            <div class="main">
+                <ul class="menu">
+                    <li><a class="menu_link" id="projects_link" href="#projects">Projects</a></li>
+                    <li><a class="menu_link" id="referals_link" href="#referals">Referals</a></li>
+                    <li><a class="menu_link" id="timeline_link" href="#timeline">Timeline</a></li>                
+                    <li><a class="menu_link" id="contacts_link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </header>
         <section class="short_about_wrapper">
             <h1 class="short_description_title">Personal Website</h1>
@@ -350,7 +352,7 @@
                             <div class="timeline_left_triangle"></div>
                             <div class="timeline_left_icon">
                                 <div class="relative">
-                                    <i class="fa fa-suitcase"></i>
+                                    <i class="timeline_icon fa fa-suitcase"></i>
                                 </div>
                             </div>
                         </div>
@@ -376,7 +378,7 @@
                             </div>
                             <div class="timeline_right_triangle"></div>
                             <div class="timeline_right_icon">
-                                <i class="fa fa-users"></i>
+                                <i class="timeline_icon fa fa-users"></i>
                             </div>
                         </div>
 
@@ -400,7 +402,7 @@
                             </div>
                             <div class="timeline_left_triangle"></div>
                             <div class="timeline_left_icon">
-                                <i class="fa fa-diamond"></i>
+                                <i class="timeline_icon fa fa-diamond"></i>
                             </div>
                         </div>
 
@@ -424,7 +426,7 @@
                             </div>
                             <div class="timeline_right_triangle"></div>
                             <div class="timeline_right_icon">
-                                <i class="fa fa-code"></i>
+                                <i class="timeline_icon fa fa-code"></i>
                             </div>
                         </div>
                         
@@ -448,7 +450,7 @@
                             </div>
                             <div class="timeline_left_triangle"></div>
                             <div class="timeline_left_icon">
-                                <i class="fa fa-pencil"></i>
+                                <i class="timeline_icon fa fa-pencil"></i>
                             </div>
                         </div>
                         
@@ -471,7 +473,7 @@
                             </div>
                             <div class="timeline_right_triangle"></div>
                             <div class="timeline_right_icon">
-                                <i class="fa fa-power-off"></i>
+                                <i class="timeline_icon fa fa-power-off"></i>
                             </div>
                         </div>
                         
@@ -492,7 +494,7 @@
                             </div>
                             <div class="timeline_left_triangle"></div>
                             <div class="timeline_left_icon">
-                                <i class="fa fa-graduation-cap"></i>
+                                <i class="timeline_icon fa fa-graduation-cap"></i>
                             </div>
                         </div>
                         
@@ -512,7 +514,7 @@
                             </div> 
                             <div class="timeline_right_triangle"></div>
                             <div class="timeline_right_icon">
-                                <i class="fa fa-trophy"></i>
+                                <i class="timeline_icon fa fa-trophy"></i>
                             </div>
                         </div>
                         <div class="clear"></div>
@@ -536,8 +538,11 @@
                     <a href="https://pt.linkedin.com/in/fernandoribeiroweb" target="_blank" class="social_wrapper">
                         <i class="fa fa-linkedin-square"></i>
                     </a>
-                    <a href="https://github.com/fernandogr060" target="_blank" class="social_wrapper">
+                    <!-- <a href="https://github.com/fernandogr060" target="_blank" class="social_wrapper">
                         <i class="fa fa-github-square"></i>
+                    </a> -->
+                    <a href="mailto:fernandogr060@gmail.com" target="_blank" class="social_wrapper">
+                        <i class="fa fa-envelope"></i>
                     </a>
                     <a href="skype:freakyfrainzz?add" class="social_wrapper">
                         <i class="fa fa-skype"></i>
@@ -587,14 +592,14 @@
                     var total_height = 0;
                     $('.timeline_step').each(function () {
                         var element_height = $(this).height();
-                        total_height = total_height+element_height+40;
+                        total_height = total_height+element_height+170;
                         var docHeight = $( window ).height();
                         var scrollPosition = $(document).scrollTop();
                         var currentElement = $(this);
                         var element_position = currentElement.offset().top;
                         if(scrollPosition > element_position-(docHeight-200)){
                             $(this).animate({
-                                opacity: 1,
+                                opacity:1,
                                 left: 0
                             });
                         }
