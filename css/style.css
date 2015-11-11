@@ -196,16 +196,17 @@ p{
     cursor:pointer;
 }
 
-.project_overlay{
-    position:absolute;
-    z-index:10;
-    background-color:rgba(0,0,0,0.7);
-    width:382px;
-    height:215px;
-    top:0;
-    left:0;
-    display:none;
-    text-align: center
+.project_overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    bottom: 0;
+    display: none;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 10;
 }
 
 .view_website{
@@ -559,77 +560,19 @@ p{
     width:90%;
     padding:0 5%;
   }
-}
 
-@media (max-width: 800px) {
-
-  .myphoto_wrapper{
-        opacity:0.8;
-        width:150px;
-        height:150px;
-        border-radius:50%;
-        border:4px solid #222;
-        overflow:hidden;
-        margin:20vh auto  0;
-    }
-
-    .menu{
-        text-align: center
-    }
-  
-    .short_description{
-        width:100%;
-        font-size:18px;
-    }
-
-    .head_text{
-        width:100%;
-    }
-
-    .project_wrapper {
-        float: inherit;
-        margin-bottom: 40px;
-        margin-right: 0px;
-        min-height: auto;
-        height: auto;
-        width: 100%;
+  .project_wrapper {
+        float: left;
+        margin-bottom: 50px;
+        margin-right: 5%;
+        min-height: 380px;
+        width: 30%;
     }
 
     .project_image_wrapper img, .gallery img {
         border: 1px solid #efefef;
         height: auto;
         width: 100%;
-    }
-
-
-    .slide_background{
-        height:300px;
-    }
-
-    .slide {
-        height: 300px;
-    }
-
-
-    .referal_text {
-        color: white;
-        font-size: 15px;
-        font-style: italic;
-        font-weight: 300;
-        line-height: 21px;
-    }
-
-    .referal_wrapper {
-        margin: auto;
-        position: relative;
-        top: inherit;
-        transform: none;
-        width: 90%;
-        margin:40px 5% 0;
-    }
-
-    .inner_slide{
-        overflow:auto;
     }
 
     .current_year{
@@ -680,6 +623,151 @@ p{
     .step_tags{
         white-space:normal;
     }
+}
+
+@media (max-width: 1000px) {
+    .project_wrapper {
+        float: left;
+        margin-bottom: 50px;
+        margin-right: 6%;
+        min-height: auto;
+        width: 47%;
+    }
+
+    .project_wrapper:nth-child(3n){
+        margin-right:5%;
+
+    }
+
+    .project_wrapper:nth-child(2n){
+        margin-right:0;   
+    }
+}
+
+@media (max-width: 800px) {
+
+  .myphoto_wrapper{
+        opacity:0.8;
+        width:150px;
+        height:150px;
+        border-radius:50%;
+        border:4px solid #222;
+        overflow:hidden;
+        margin:20vh auto  0;
+    }
+
+    .menu{
+        text-align: center
+    }
+  
+    .short_description{
+        width:100%;
+        font-size:18px;
+    }
+
+    .head_text{
+        width:100%;
+    }
+
+    .project_wrapper {
+        float: inherit;
+        margin-bottom: 40px;
+        margin-right: 0px;
+        min-height: auto;
+        height: auto;
+        width: 100%;
+    }
+
+    .slide_background{
+        height:300px;
+    }
+
+    .slide {
+        height: 300px;
+    }
+
+
+    .referal_text {
+        color: white;
+        font-size: 15px;
+        font-style: italic;
+        font-weight: 300;
+        line-height: 21px;
+    }
+
+    .referal_wrapper {
+        margin: auto;
+        position: relative;
+        top: inherit;
+        transform: none;
+        width: 90%;
+        margin:40px 5% 0;
+    }
+
+    .inner_slide{
+        overflow:auto;
+    }
+
+    /*.current_year{
+        margin-bottom:150px;
+    }
+
+    .first_year{
+        margin-top:150px;
+    }
+
+    .timeline_step {
+        clear: both;
+        padding: 20px 5%;
+        position: relative;
+        width: 90%;
+        margin-bottom:130px;
+    }
+
+    .timeline_step:nth-child(even){
+        float:inherit;
+        left:0;
+    }
+
+    .timeline_step:nth-child(odd){
+        float:inherit;
+        left:0;
+    }
+
+    .timeline_left_triangle, .timeline_right_triangle{
+        display:none;
+    }
+
+    .timeline_left_icon, .timeline_right_icon {
+        background-color: #333;
+        border: 4px solid #fff;
+        border-radius: 50%;
+        color: white;
+        font-size: 28px;
+        height: 58px;
+        margin-top: -30px;
+        text-align: center;
+        top: -60px;
+        width: 58px;
+        left:50%;
+        margin-left:-31px;
+    }
+
+    .step_tags{
+        white-space:normal;
+    }*/
+
+    .step_title{
+        float:inherit;
+        margin-bottom:5px;
+        display:block;
+        line-height: 24px;
+    }
+
+    .step_date{
+        float:inherit;
+        margin-bottom:10px;
+    }
 
     .about_me {
         color: white;
@@ -704,6 +792,18 @@ p{
     .site_footer{
         padding:20px 0;
         padding-bottom:5px;
+    }
+
+    .menu li{
+        margin:0 4%;
+    }
+
+    .menu li:first-child{
+        margin-left:0;
+    }
+
+    .menu li:last-child{
+        margin-right:0;
     }
 }
 </style>

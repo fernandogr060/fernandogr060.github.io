@@ -590,21 +590,32 @@
 
                 function animateSteps(){
                     var total_height = 0;
+
+                    var browser_width = $( window ).width();
+
+                    if(browser_width < 1200){
+                        addHeight = 170;
+                        addHeight2 = 115;
+                    }else{
+                        addHeight = 40;
+                        addHeight2 = 115;
+                    }
+
                     $('.timeline_step').each(function () {
                         var element_height = $(this).height();
-                        total_height = total_height+element_height+170;
+                        total_height = total_height+element_height+addHeight;
                         var docHeight = $( window ).height();
                         var scrollPosition = $(document).scrollTop();
                         var currentElement = $(this);
                         var element_position = currentElement.offset().top;
                         if(scrollPosition > element_position-(docHeight-200)){
                             $(this).animate({
-                                opacity:1,
+                                opacity: 1,
                                 left: 0
                             });
                         }
                     });
-                    $(".timeline_center_line").css("height",total_height+115);
+                    $(".timeline_center_line").css("height",total_height+addHeight2);
                 }
 
                 animateSteps();
